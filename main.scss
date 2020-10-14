@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #0b090a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    // background-image: url('HD.jpeg');
+    // background-size: contain;
+}
+.solarbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+$Pluto : 4.743s;
+$Neptune : 5.43s;
+$Uranus : 6.8s;
+$Saturn : 9.68s;
+$Jupiter : 13.07s;
+$Mars : 14.91s;
+$Earth : 29.78s;
+$Venus : 35.02s;
+$Mercury : 47.36s;
+
+@keyframes clin{
+    0%{
+       border: 2px solid rgba(255, 255, 255, 0); 
+    }
+    50%{
+        border: 2px solid rgba(255, 255, 255, 1); 
+    }
+    100%{
+        border: 2px solid rgba(255, 255, 255, 0); 
+    }
+}
+.solarholder{
+    height: 700px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .planet{
+        cursor: pointer;
+    }
+    .s1{
+        width: 600px;
+        height: 600px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Mercury linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 20px;
+            height: 20px;
+            background-color:#49636B;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: calc(50% - 10px);
+        }
+    }
+    .s2{
+        width: 530px;
+        height: 530px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Venus linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 20px;
+            height: 20px;
+            background-color: #1C2851;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: calc(50% - 10px);
+        }
+    }
+    .s3{
+        width: 420px;
+        height: 420px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Earth linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 20px;
+            height: 20px;
+            background-color: #8180ff;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: calc(50% - 10px);
+        }
+    }
+    .s4{
+        width: 330px;
+        height: 330px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Mars linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 20px;
+            height: 20px;
+            background-color: #fdc888;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: calc(50% - 10px);
+        }
+    }
+    .s5{
+        width: 260px;
+        height: 260px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Jupiter linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 24px;
+            height: 24px;
+            background-color: #DB2520;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -12px;
+            top: calc(50% - 12px);
+        }
+    }
+    .s6{
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Saturn linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 12px;
+            height: 12px;
+            background-color: #255ea1;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: calc(50% - 6px);
+        }
+    }
+    .s7{
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Uranus linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 12px;
+            height: 12px;
+            background-color: #c6986c;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+            top: calc(50% - 6px);
+        }
+    }
+    .s8{
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgba(255, 255, 0, 0.178);
+        position: absolute;
+        border-radius: 50%;
+        border-style: dashed; transition: .1s ease;
+        animation: s1 $Neptune linear infinite;
+        &:hover{
+            .pl{
+                animation: clin .5s ease infinite;
+            }
+        }
+        .pl{
+            width: 10px;
+            height: 10px;
+            background-color: #3a3b32;
+            display: inline-block;
+            border-radius: 50%;
+            position: absolute;
+            left: -5px;
+            top: calc(50% - 5px);
+        }
+    }
+    .sun{
+        width: 60px;
+        height: 60px;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+}
+
+@keyframes s1{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card{
+    padding: 5px;
+    min-width: 250px;
+    min-height: auto;
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    // transition: .1s ease;
+    h3{
+        font-weight: bold;
+        padding: 2px;
+        margin: 5px;
+        color: #2D393A;
+    }
+    #pl_fact{
+        font-weight: bold;
+        padding: 2px;
+        margin: 5px;
+        width: 250px;
+        opacity: 0.9;
+    }
+    table{
+        width: 100%;
+        tr{
+            padding: 2px;
+            margin: 5px;
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+            .tdi{
+                width: 200px;
+            }
+            td{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.card-hovered{
+    display: block;
+    // background-color: red;
+}
+.planet-selected{
+    animation: clin .5s ease infinite;
+}
+
+
+.wiki{
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    max-width: 650px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    p,li,h2{
+        color: #000;
+    }
+    h2{
+        margin-bottom: 5px;
+    }
+    p,ol{
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    p,li{
+        opacity: 0.8;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    li{
+        list-style: disc;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+.footer{
+    padding: 10px 0;
+    p{
+        color: #fff;
+        opacity: 0.6;
+        font-size: .7rem;
+        text-align: center;
+        margin: 5px 0;
+        a{
+            color: #fff;
+            opacity: 0.6;
+            
+        }
+    }
+
+}
