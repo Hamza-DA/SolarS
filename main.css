@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #0b090a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+}
+
+.solarbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes clin {
+  0% {
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+  50% {
+    border: 2px solid white;
+  }
+  100% {
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes clin {
+  0% {
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+  50% {
+    border: 2px solid white;
+  }
+  100% {
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+}
+
+.solarholder {
+  height: 700px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.solarholder .planet {
+  cursor: pointer;
+}
+
+.solarholder .s1 {
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 47.36s linear infinite;
+          animation: s1 47.36s linear infinite;
+}
+
+.solarholder .s1:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s1 .pl {
+  width: 20px;
+  height: 20px;
+  background-color: #49636B;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: calc(50% - 10px);
+}
+
+.solarholder .s2 {
+  width: 530px;
+  height: 530px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 35.02s linear infinite;
+          animation: s1 35.02s linear infinite;
+}
+
+.solarholder .s2:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s2 .pl {
+  width: 20px;
+  height: 20px;
+  background-color: #1C2851;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: calc(50% - 10px);
+}
+
+.solarholder .s3 {
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 29.78s linear infinite;
+          animation: s1 29.78s linear infinite;
+}
+
+.solarholder .s3:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s3 .pl {
+  width: 20px;
+  height: 20px;
+  background-color: #8180ff;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: calc(50% - 10px);
+}
+
+.solarholder .s4 {
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 14.91s linear infinite;
+          animation: s1 14.91s linear infinite;
+}
+
+.solarholder .s4:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s4 .pl {
+  width: 20px;
+  height: 20px;
+  background-color: #fdc888;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: calc(50% - 10px);
+}
+
+.solarholder .s5 {
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 13.07s linear infinite;
+          animation: s1 13.07s linear infinite;
+}
+
+.solarholder .s5:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s5 .pl {
+  width: 24px;
+  height: 24px;
+  background-color: #DB2520;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: calc(50% - 12px);
+}
+
+.solarholder .s6 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 9.68s linear infinite;
+          animation: s1 9.68s linear infinite;
+}
+
+.solarholder .s6:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s6 .pl {
+  width: 12px;
+  height: 12px;
+  background-color: #255ea1;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: calc(50% - 6px);
+}
+
+.solarholder .s7 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 6.8s linear infinite;
+          animation: s1 6.8s linear infinite;
+}
+
+.solarholder .s7:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s7 .pl {
+  width: 12px;
+  height: 12px;
+  background-color: #c6986c;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: calc(50% - 6px);
+}
+
+.solarholder .s8 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 0, 0.178);
+  position: absolute;
+  border-radius: 50%;
+  border-style: dashed;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  -webkit-animation: s1 5.43s linear infinite;
+          animation: s1 5.43s linear infinite;
+}
+
+.solarholder .s8:hover .pl {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.solarholder .s8 .pl {
+  width: 10px;
+  height: 10px;
+  background-color: #3a3b32;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+  top: calc(50% - 5px);
+}
+
+.solarholder .sun {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes s1 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes s1 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.card {
+  padding: 5px;
+  min-width: 250px;
+  min-height: auto;
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+}
+
+.card h3 {
+  font-weight: bold;
+  padding: 2px;
+  margin: 5px;
+  color: #2D393A;
+}
+
+.card #pl_fact {
+  font-weight: bold;
+  padding: 2px;
+  margin: 5px;
+  width: 250px;
+  opacity: 0.9;
+}
+
+.card table {
+  width: 100%;
+}
+
+.card table tr {
+  padding: 2px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.card table tr .tdi {
+  width: 200px;
+}
+
+.card table tr td {
+  font-weight: bold;
+}
+
+.card-hovered {
+  display: block;
+}
+
+.planet-selected {
+  -webkit-animation: clin .5s ease infinite;
+          animation: clin .5s ease infinite;
+}
+
+.wiki {
+  border-radius: 10px;
+  background-color: #d8d8d8;
+  padding: 10px;
+  max-width: 650px;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wiki p, .wiki li, .wiki h2 {
+  color: #000;
+}
+
+.wiki h2 {
+  margin-bottom: 5px;
+}
+
+.wiki p, .wiki ol {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.wiki p, .wiki li {
+  opacity: 0.8;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.wiki li {
+  list-style: disc;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  padding: 10px 0;
+}
+
+.footer p {
+  color: #fff;
+  opacity: 0.6;
+  font-size: .7rem;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.footer p a {
+  color: #fff;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=main.css.map */
