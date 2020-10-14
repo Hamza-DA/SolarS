@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  outline: none !important;
 }
 
 body {
@@ -451,5 +452,19 @@ body {
 .footer p a {
   color: #fff;
   opacity: 0.6;
+}
+
+@media all and (max-width: 500px) {
+  .solarholder {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .card {
+    bottom: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    top: auto !important;
+    background-color: #d8d8d8d4 !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
